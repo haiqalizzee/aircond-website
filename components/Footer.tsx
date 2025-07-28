@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     return (
         <footer className="bg-brand-blue-deep text-white">
             <div className="container mx-auto px-4 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
                     <div>
                         <h3 className="font-bold text-lg mb-4 uppercase tracking-wider">AirCool Pro HQ</h3>
                         <p className="text-gray-300">
@@ -24,7 +24,9 @@ const Footer: React.FC = () => {
                         <a href="tel:012-6789765" className="text-3xl font-bold hover:text-brand-blue-light transition-colors duration-300">
                             012-6789 765
                         </a>
-                        <h3 className="font-bold text-lg mt-8 mb-4 uppercase tracking-wider">Email</h3>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-lg mb-4 uppercase tracking-wider">Email</h3>
                         <a href="mailto:contact@aircool.pro" className="text-lg text-gray-300 hover:text-white">
                             contact@aircool.pro
                         </a>
