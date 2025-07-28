@@ -19,9 +19,17 @@ const Brands: React.FC = () => {
                         />
                     </div>
                 ))}
-                {/* Duplicate logos for seamless loop */}
                 {BRAND_LOGOS.map((logo, index) => (
                     <div key={`duplicate-${index}`} className="flex-shrink-0 mx-8 lg:mx-12">
+                        <img 
+                          src={logo} 
+                          alt={`Brand Logo ${index + 1}`} 
+                          className="h-16 md:h-20 lg:h-24 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                        />
+                    </div>
+                ))}
+                {BRAND_LOGOS.map((logo, index) => (
+                    <div key={`triplicate-${index}`} className="flex-shrink-0 mx-8 lg:mx-12">
                         <img 
                           src={logo} 
                           alt={`Brand Logo ${index + 1}`} 

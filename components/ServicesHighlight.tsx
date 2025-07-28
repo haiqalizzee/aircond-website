@@ -34,7 +34,7 @@ const serviceCards = [
 const ServicesHighlight: React.FC = () => {
   return (
         <div className="bg-brand-blue-light/10">
-      <div className="container mx-auto px-4 py-16 -mt-36 relative z-20">
+      <div className="container mx-auto px-4 py-16 md:-mt-36 relative z-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {serviceCards.map((card, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 flex items-start space-x-6">
