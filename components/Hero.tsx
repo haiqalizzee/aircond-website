@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="relative bg-brand-blue-light text-white py-20 md:py-32 overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ backgroundImage: "url('https://picsum.photos/seed/ac/1920/1080')", opacity: 0.15 }}>
+        style={{ backgroundImage: "url('/hero.jpg')", opacity: 0.15 }}>
       </div>
       <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-white/10 rounded-full"></div>
       <div className="absolute -top-10 -right-20 w-80 h-80 bg-white/10 rounded-full"></div>
@@ -40,11 +40,12 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="lg:w-1/2 relative flex justify-center">
-            <img src="https://picsum.photos/seed/technician/600/700" alt="Air Conditioner Technician" className="rounded-2xl shadow-2xl z-10 max-w-sm w-full" />
-            <div className="absolute top-1/2 -translate-y-1/2 -right-8 w-24 h-24 bg-yellow-300 rounded-full z-20 flex items-center justify-center flex-col text-gray-800 text-xs font-bold leading-tight transform -rotate-12">
-                <span>CERTIFIED</span>
-                <span>TECHNICIANS</span>
-                <span>(ACCT)</span>
+            <div className="relative">
+                <img src="/hero.jpg" alt="Air Conditioner Technician" className="rounded-2xl shadow-2xl z-10 max-w-lg w-full" />
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-300 rounded-full z-20 flex items-center justify-center flex-col text-gray-800 text-xs font-bold leading-tight transform -rotate-12">
+                    <span>CERTIFIED</span>
+                    <span>TECHNICIANS</span>
+                </div>
             </div>
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-white/20 rounded-2xl z-0 transform rotate-12"></div>
         </div>
